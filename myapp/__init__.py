@@ -18,7 +18,7 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 
 # set up connection to db
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://localhost:5432/test11"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://kevanteaniah:026100@localhost:5432/nymodb"
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
@@ -52,3 +52,10 @@ app.register_blueprint(error_pages)
 #linking users views Blueprint
 from myapp.users.views import users
 app.register_blueprint(users)
+
+
+from myapp.nymos.views import nymos
+app.register_blueprint(nymos)
+
+from myapp.core.views import core 
+app.register_blueprint(core)
