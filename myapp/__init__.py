@@ -57,5 +57,5 @@ app.register_blueprint(users)
 from myapp.nymos.views import nymos
 app.register_blueprint(nymos)
 
-from myapp.core.views import core 
-app.register_blueprint(core)
+# from myapp.nymos.views import nymos 
+# app.register_blueprint(nymos)

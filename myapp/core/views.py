@@ -3,8 +3,6 @@
 from flask import render_template, request, Blueprint
 from myapp.models import Nymo
 
-from flask import render_template, request, Blueprint
-
 core = Blueprint('core', __name__)
 
 @core.route('/')
