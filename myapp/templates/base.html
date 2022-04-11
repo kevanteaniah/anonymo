@@ -19,7 +19,7 @@
         
         {% if current_user.is_authenticated %}
         <li class="nav-link">
-            <a href="{{url_for('nymos.create_nymo')}}">Nymo</a> 
+            <a href="{{url_for('nymos.create_post')}}">Nymo</a> 
         </li>
         <li class="nav-link">
             <a href="{{url_for('users.logout')}}">Log Out</a>
