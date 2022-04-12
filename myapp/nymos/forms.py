@@ -3,6 +3,5 @@ from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired
 
 class NymoPostForm(FlaskForm):
-    title = StringField('Title', validators=[DataRequired()])
-    text = TextAreaField('Text', validators=[DataRequired()])
+    text = TextAreaField('', validators=[DataRequired()], render_kw={"placeholder": "Spill the Beans"})
     submit = SubmitField('Post')

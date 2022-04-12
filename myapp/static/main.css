@@ -1,6 +1,8 @@
 *{
   margin: 0;
   padding: 0;
+  background-color: #070707;
+  color: white;
 }
 
 /* Nav bar */
@@ -11,7 +13,7 @@
 	margin: 0 0 1em 0;
 	padding: 0;
 	background-color: #070707;
-	border-bottom: 1px solid rgb(255, 255, 255);
+	border-bottom: 1px solid rgb(36, 36, 36);
   color: white;
 }
 
@@ -47,9 +49,61 @@ img {
   transform: scale(1.1);
 }
 
-/* Nymo container*/
+/* Nymo container form  area*/
 .nymo-container{
   border: 1px solid red;
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+}
+
+#pro-image{
+  width: 25px;
+  height: 25px;
+  background-color: #070707;
+  border: 2px solid #dddddd;
+  border-radius: 50%;
+}
+#pro-name{
+  align-items: center;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 88px;
+}
+.nymo-form{
+  
+  margin: auto;
+}
+
+#form{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+
+}
+#usname{
+  margin-left: 5px;
+}
+
+textarea{
+  margin: auto;
+  width: 500px;
+  height: 50px;
+  border: none;
+  right: 0;
+  padding-right: 2px;
+  outline: none;
+  font-size: 20px;
+  border-bottom: 1px solid rgb(104, 102, 102);
+  resize: none;
+  
+}
+
+::placeholder {
+  font-size: 20px;
+  text-align: left;
   
 }
 

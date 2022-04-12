@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="nymo-container">
+    <div id="pro-name">
+        <div><img src="/static/images/unknown.png" alt="profile" id="pro-image"></div>
+        <div id="usname"><h4>username</h4></div>
+        
+    </div>
+    <div id="form">
     <form class="nymo-form" method="POST">
         {{form.hidden_tag()}}
         <div class="nymo-form">
@@ -11,6 +17,8 @@
         {{form.submit(class="btn btn-outline-info")}}
     </div>
     </form>
+    </div>
+    
 </div>
 
     <div class="jumbotron">
