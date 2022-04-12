@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=Montserrat:wght@100&family=Oxygen:wght@700&family=Press+Start+2P&family=Roboto:wght@100&family=VT323&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   background-color: #070707;
   color: white;
+  font-family: 'Heebo', sans-serif;
 }
 
 /* Nav bar */
@@ -124,7 +127,7 @@ textarea{
 
 .nymo-card{
   border-bottom: solid 1px #6e6d6d;
-  padding: 5px;
+  padding: 30px;
   position: relative;
 }
 
@@ -162,7 +165,18 @@ textarea{
 .uname-nymo{
   position: absolute;
   top: 10px; 
-  right: 10px;
+  right: 5px;
+}
+
+.uname-link{
+  color: rgb(0, 194, 194);
+  font-weight: bolder;
+  font-family: 'Oxygen', sans-serif;
+}
+.time{
+  position: absolute;
+  bottom: 1px; 
+  right: 5px;
 }
 
 
