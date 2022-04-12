@@ -15,6 +15,7 @@
 	background-color: #070707;
 	border-bottom: 1px solid rgb(36, 36, 36);
   color: white;
+  position: fixed;
 }
 
 ul{
@@ -50,15 +51,14 @@ img {
 
 /* Nymo container form  area*/
 .nymo-container{
-  border: 2px solid rgb(85, 85, 85);
+  border: 1px solid rgb(85, 85, 85);
   width: 50%;
   justify-content: center;
   margin: auto;
 }
 
 #pro-image{
-  width: 25px;
-  height: 25px;
+  
   background-color: #070707;
   border: 2px solid #dddddd;
   border-radius: 50%;
@@ -109,11 +109,6 @@ textarea{
   
 }
 
-.card-title{
-  border: #dddddd;
-}
-
-
 
 ::placeholder {
   font-size: 20px;
@@ -127,8 +122,9 @@ textarea{
   width: 50%;
 }
 
-.card{
-  border: #dddddd;
+.nymo-card{
+  border-bottom: solid 1px #6e6d6d;
+  padding: 5px;
 }
 
 .container{
@@ -138,6 +134,31 @@ textarea{
 .nymos-list-container{
   border: 1px solid red;
 }
+
+.title-user{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.card-title{
+  font-size: 30px;
+  padding-left: 5px;
+  
+}
+
+.nymo-img-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nymo-img-title-uname{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 
 
 

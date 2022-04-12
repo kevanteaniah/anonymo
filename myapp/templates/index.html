@@ -2,7 +2,7 @@
 {% block content %}
 <div class="nymo-container">
     <div id="pro-name">
-        <div><img src="/static/images/unknown(1).png" alt="profile" id="pro-image"></div>
+        <div><img src="/static/images/unknown (2).png" alt="profile" id="pro-image"></div>
         <div id="usname"><h4>username</h4></div>
         
     </div>
@@ -27,17 +27,22 @@
 <div class="full-feed">
     <div class="container">
         {% for nymo in nymos.items %}
-            <div class="card">
-                <div class="car-boy">
-                    <h2>
-                        <a class="card-title" href="{{url_for('nymos.nymo', nymo_id=nymo.id)}}">{{nymo.title}}</a>
-                        <a href="{{url_for('users.user_posts', username=nymo.author.username)}}">{{nymo.author.username}}</a>
-                    </h2>
+            <div class="nymo-card">
+                <div class="nymo-img-title">
+                    <div>
+                        <img src="/static/images/unknown (2).png" alt="profile" id="pro-image">
+                    </div>
+                        <div>
+                            <a class="card-title" href="{{url_for('nymos.nymo', nymo_id=nymo.id)}}">{{nymo.title}}</a>
+                        </div>
+                    </div>
+                    <div class="uname-nymo">
+                        <a  href="{{url_for('users.user_posts', username=nymo.author.username)}}">@{{nymo.author.username}}</a>
+                    </div>  
+                    <div>{{nymo.text}}</div>
                     <p>{{nymo.date.strftime('%m - %d - %y')}}</p>
                     <a class="btn btn-primary" href="{{url_for('nymos.nymo', nymo_id=nymo.id)}}">Read</a>
                 </div>
-            </div>
-        
             {% endfor %}
     </div>
 </div>
