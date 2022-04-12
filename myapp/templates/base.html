@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./main.css') }}">
+    <script src="https://kit.fontawesome.com/500ce860b4.js" crossorigin="anonymous"></script>
     <title>Nymo</title>
 </head>
 <body>
-    <ul class="nav">
+    <div id="nav">
+    <ul>
         <li class="nav-link">
-            <a href="{{url_for('core.index')}}">Home</a>
+            <a href="{{url_for('core.index')}}"><img src="/static/images/unknown.png" alt="logo"></a>
         </li>
         <li class="nav-link">
-            <a href="{{url_for('core.info')}}">About</a>
+            <a href="{{url_for('core.index')}}"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li class="nav-link">
+            <a href="{{url_for('core.info')}}"><i class="fa-solid fa-circle-info"></i></a>
         </li>
         
         {% if current_user.is_authenticated %}
         <li class="nav-link">
-            <a href="{{url_for('nymos.create_post')}}">Nymo</a> 
+            <a href="{{url_for('users.logout')}}"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
         </li>
         <li class="nav-link">
-            <a href="{{url_for('users.logout')}}">Log Out</a>
-        </li>
-        <li class="nav-link">
-            <a href="{{url_for('users.account')}}">Account</a>
+            <a href="{{url_for('users.account')}}"><i class="fa-solid fa-user"></i></a>
         </li>
         {% else %}
         <li class="nav-link">
-            <a href="{{url_for('users.login')}}">Log In</a>
+            <a href="{{url_for('users.login')}}"><i class="fa-solid fa-arrow-right-from-bracket"></a>
         </li>
         <li class="nav-link navtall">
-            <a href="{{url_for('users.register')}}">Register</a>
+            <a href="{{url_for('users.register')}}"><i class="fa-solid fa-user-plus"></i></a>
         </li>
         {% endif %}
     </ul>
+</div>
+
 
     <div class="container">
         {% block content %}

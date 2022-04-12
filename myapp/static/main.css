@@ -1,9 +1,63 @@
-.nymo-form{
-  border: red;
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav bar */
+#nav {
+  left: 0;
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: #070707;
+	border-bottom: 1px solid rgb(255, 255, 255);
+  color: white;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+.fa-solid{
+  width: 20px;
+  height: 20px;
+}
+
+.fa-solid:hover{
+  color: red;
+  transform: scale(1.1);
+}
+
+/* Nymo container*/
+.nymo-container{
+  border: 1px solid red;
+  
+}
+
+
+@media only screen and (max-width: 400px)  {
+  /*mobile nav */
+  
 
 }
 
-.navtall{
-  color: yellow;
-  border: solid red 1px;
-}
+
