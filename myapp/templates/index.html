@@ -1,18 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="container">
-    <form class="form-group form2" method="POST">
+    <form class="nymo-form" method="POST">
         {{form.hidden_tag()}}
 
-        <div class="form-group">
+        <div class="nymo-form">
             {{form.title.label(class="form-control-label")}}
             {{form.title(class="form-control form-control-lg")}}
         </div>
-        <div class="form-group">
+        <div class="nymo-form">
         {{form.text.label(class="form-control-label")}}
         {{form.text(class="form-control form-control-lg")}}
     </div>
-    <div class="form-group">
+    <div class="nymo-form">
         {{form.submit(class="btn btn-outline-info")}}
     </div>
     </form>
