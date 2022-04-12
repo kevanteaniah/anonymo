@@ -2,14 +2,16 @@
 
 from flask import render_template, request, Blueprint
 from myapp.models import Nymo
+from myapp.nymos.forms import NymoPostForm
 
 core = Blueprint('core', __name__)
 
 @core.route('/')
 def index():
+    form = NymoPostForm()
     page = request.args.get('page', 1, type=int)
     nymos = Nymo.query.order_by(Nymo.date.desc()).paginate(page=page, per_page=5)
-    return render_template('index.html', nymos=nymos)
+    return render_template('index.html', nymos=nymos, form=form)
 
 @core.route('/info')
 def info():

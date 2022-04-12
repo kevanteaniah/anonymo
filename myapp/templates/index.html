@@ -1,8 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-
 <div class="container">
-    <form class="form-group" method="POST">
+    <form class="form-group form2" method="POST">
         {{form.hidden_tag()}}
 
         <div class="form-group">
@@ -28,7 +27,7 @@
                 <div class="car-boy">
                     <h2>
                         <a class="card-title" href="{{url_for('nymos.nymo', nymo_id=nymo.id)}}">{{nymo.title}}</a>
-                        <a href="{{url_for('users.user_nymos', username=nymo.author.username)}}">Written by: {{nymo.author.username}}</a>
+                        <a href="{{url_for('users.user_posts', username=nymo.author.username)}}">Written by: {{nymo.author.username}}</a>
                     </h2>
                     <p>Published on: {{nymo.date.strftime('%Y - %m - %d')}}</p>
                     <a class="btn btn-primary" href="{{url_for('nymos.nymo', nymo_id=nymo.id)}}">Read Blog Post</a>

@@ -17,7 +17,7 @@ def create_post():
         flash('Nymo Created')
         print('Nymo was created')
         return redirect(url_for('core.index'))
-    return render_template('create_post.html', form=form)
+    return render_template('index.html', form=form)
 
     # Make sure the blog_post_id is an integer!
 
