@@ -2,7 +2,7 @@
 {% block content %}
 <div class="nymo-container">
     <div id="pro-name">
-        <div><img src="/static/images/unknown.png" alt="profile" id="pro-image"></div>
+        <div><img src="/static/images/unknown(1).png" alt="profile" id="pro-image"></div>
         <div id="usname"><h4>username</h4></div>
         
     </div>
@@ -24,10 +24,7 @@
     </div>
     
 </div>
-<div id="full-feed">
-    <div class="nymos-list-container">
-        <h1>Blog</h1>
-    </div>
+<div class="full-feed">
     <div class="container">
         {% for nymo in nymos.items %}
             <div class="card">
@@ -40,7 +37,8 @@
                     <a class="btn btn-primary" href="{{url_for('nymos.nymo', nymo_id=nymo.id)}}">Read</a>
                 </div>
             </div>
-        {% endfor %}
+        
+            {% endfor %}
     </div>
 </div>
 

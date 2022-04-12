@@ -35,8 +35,7 @@ li {
 }
 
 img {
-  width: 20px;
-  height: 20px;
+  
 }
 
 .fa-solid{
@@ -110,9 +109,11 @@ textarea{
   
 }
 
-.nymo-but{
-  
+.card-title{
+  border: #dddddd;
 }
+
+
 
 ::placeholder {
   font-size: 20px;
@@ -120,9 +121,10 @@ textarea{
 }
 
 /*nymo list*/
-#full-feed{
-  
-  border: red;
+.full-feed{
+  margin: auto;
+  border: 1px solid rgb(102, 101, 101);
+  width: 50%;
 }
 
 .card{
@@ -131,6 +133,10 @@ textarea{
 
 .container{
   border: red;
+}
+
+.nymos-list-container{
+  border: 1px solid red;
 }
 
 
