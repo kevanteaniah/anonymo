@@ -34,10 +34,10 @@
                 <div class="car-boy">
                     <h2>
                         <a class="card-title" href="{{url_for('nymos.nymo', nymo_id=nymo.id)}}">{{nymo.title}}</a>
-                        <a href="{{url_for('users.user_posts', username=nymo.author.username)}}">Written by: {{nymo.author.username}}</a>
+                        <a href="{{url_for('users.user_posts', username=nymo.author.username)}}">{{nymo.author.username}}</a>
                     </h2>
-                    <p>Published on: {{nymo.date.strftime('%Y - %m - %d')}}</p>
-                    <a class="btn btn-primary" href="{{url_for('nymos.nymo', nymo_id=nymo.id)}}">Read Blog Post</a>
+                    <p>{{nymo.date.strftime('%m - %d - %y')}}</p>
+                    <a class="btn btn-primary" href="{{url_for('nymos.nymo', nymo_id=nymo.id)}}">Read</a>
                 </div>
             </div>
         {% endfor %}

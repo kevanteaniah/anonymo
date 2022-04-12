@@ -117,7 +117,6 @@ textarea{
 ::placeholder {
   font-size: 20px;
   text-align: left;
-  
 }
 
 /*nymo list*/
@@ -125,6 +124,16 @@ textarea{
   
   border: red;
 }
+
+.card{
+  border: #dddddd;
+}
+
+.container{
+  border: red;
+}
+
+
 
 
 @media only screen and (max-width: 400px)  {

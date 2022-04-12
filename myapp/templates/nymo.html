@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="jumbotron">
+<div class="nymos-list-container">
   <h1>{{ post.title }}</h1>
   <h2>Written by: {{nymo.author.username}}</h2>
   <h3>Published: {{ nymo.date.strftime('%B %d, %Y') }}</h3>
