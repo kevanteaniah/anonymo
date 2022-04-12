@@ -6,7 +6,7 @@ from myapp.nymos.forms import NymoPostForm
 
 nymos = Blueprint('nymos', __name__)
 
-@nymos.route('/create', methods=['GET', 'POST'])
+@nymos.route('/', methods=['GET', 'POST'])
 @login_required
 def create_post():
     form = NymoPostForm()

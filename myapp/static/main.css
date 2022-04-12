@@ -51,7 +51,7 @@ img {
 
 /* Nymo container form  area*/
 .nymo-container{
-  border: 1px solid red;
+  border: 2px solid rgb(85, 85, 85);
   width: 50%;
   justify-content: center;
   margin: auto;
@@ -87,6 +87,15 @@ img {
   margin-left: 5px;
 }
 
+input {
+  border: none;
+  height: 25px;
+  outline: none;
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(104, 102, 102);
+}
+
 textarea{
   margin: auto;
   width: 500px;
@@ -101,10 +110,20 @@ textarea{
   
 }
 
+.nymo-but{
+  
+}
+
 ::placeholder {
   font-size: 20px;
   text-align: left;
   
+}
+
+/*nymo list*/
+#full-feed{
+  
+  border: red;
 }
 
 
