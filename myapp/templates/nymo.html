@@ -1,10 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="nymos-list-container">
-  <h1>{{ post.title }}</h1>
-  <h2>Written by: {{nymo.author.username}}</h2>
-  <h3>Published: {{ nymo.date.strftime('%B %d, %Y') }}</h3>
-  <p>{{nymo.text}}</p>
+<div class="update-container">
+  <div class="nymo-img-title">
+  <div>
+    <img src="/static/images/unknown (2).png" alt="profile" id="pro-image">
+</div>
+
+  <div class="card-title">{{ nymo.title }}</div>
+</div>
+  <div class="uname-nymo uname-link">@{{nymo.author.username}}
+</div> 
+<p class="time">{{nymo.date.strftime('%m - %d - %y')}}</p>
+<div class="text">{{nymo.text}}</div>
   {% if nymo.author == current_user %}
     <div>
       <a class="btn btn-secondary" href="{{ url_for('nymos.update', nymo_id=nymo.id) }}">Update</a>

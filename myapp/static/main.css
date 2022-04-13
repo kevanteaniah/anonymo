@@ -227,6 +227,16 @@ textarea{
   width: 25%;
 }
 
+/* edit delte */
+
+.update-container{
+  width: 50%;
+  margin: auto;
+  border: solid 1px #6e6d6d;
+  padding: 30px;
+  position: relative;
+}
+
 
 
 

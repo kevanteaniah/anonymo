@@ -19,7 +19,7 @@ def create_post():
         return redirect(url_for('core.index'))
     return render_template('index.html', form=form)
 
-    # Make sure the blog_post_id is an integer!
+    # Make sure the blog_nymo_id is an integer!
 
 @nymos.route('/<int:nymo_id>')
 def nymo(nymo_id):
@@ -40,7 +40,7 @@ def update(nymo_id):
         nymo.title = form.title.data
         nymo.text = form.text.data
         db.session.commit()
-        flash('Blog Post Updated')
+        flash('Nymo Updated')
         return redirect(url_for('nymos.nymos',nymo_id=nymo.id))
 
     elif request.method == 'GET':

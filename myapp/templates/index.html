@@ -37,7 +37,7 @@
                         </div>
                     </div>
                     <div class="uname-nymo">
-                        <a class="uname-link" href="{{url_for('users.user_posts', username=nymo.author.username)}}">@{{nymo.author.username}}</a>
+                        <a class="uname-link" href="{{url_for('users.user_nymos', username=nymo.author.username)}}">@{{nymo.author.username}}</a>
                     </div>  
                     <div class="text">{{nymo.text}}</div>
                     <p class="time">{{nymo.date.strftime('%m - %d - %y')}}</p>
