@@ -16,6 +16,7 @@ body {
 .container{
   justify-content: center;
   
+  
 }
 
 /* Nav bar */
@@ -206,18 +207,20 @@ textarea{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+  border: 1px solid rgb(77, 76, 76);
   width: 500px;
   height: 200px;
   margin: auto;
-  background-color: aliceblue;
+  
 }
+
 
 /* register form */
 .register {
   border: 1px solid #dddddd;
-  width: 300px;
+  width: 400px;
   margin: auto;
+  padding: 25px;
   
 
 }
@@ -278,6 +281,10 @@ textarea{
 
 .delete:hover{
   transform: scale(1.1);
+}
+
+.button-ani:hover{
+  color: teal;
 }
 
 /* update form */
