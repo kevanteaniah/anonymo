@@ -24,7 +24,7 @@ def create_post():
 @nymos.route('/<int:nymo_id>')
 def nymo(nymo_id):
     nymo = Nymo.query.get_or_404(nymo_id) 
-    return render_template('blog_post.html', title=nymo.title, date=nymo.date, post=nymo)
+    return render_template('nymo.html', title=nymo.title, date=nymo.date, nymo=nymo)
 
 @nymos.route('/<int:nymo_id>/update',methods=['GET','POST'])
 @login_required
