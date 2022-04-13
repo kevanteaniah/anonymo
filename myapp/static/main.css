@@ -85,7 +85,13 @@ img {
 }
 .nymo-form{
   
-  margin: auto;
+  width: auto;
+  position: relative;
+  
+}
+
+.form{
+  position: absolute;
 }
 
 #form{
@@ -106,6 +112,7 @@ input {
   font-size: 20px;
   margin-bottom: 15px;
   border-bottom: 1px solid rgb(104, 102, 102);
+  width: auto;
 }
 
 textarea{
@@ -273,6 +280,7 @@ textarea{
   transform: scale(1.1);
 }
 
+/* update form */
 
 
 
@@ -280,10 +288,145 @@ textarea{
 
 
 
-@media only screen and (max-width: 400px)  {
+@media only screen and (max-width: 540px)  {
   /*mobile nav */
   
+  textarea{
+    width: auto;
+  }
+}
+@media only screen and (max-width: 840px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}
+@media only screen and (max-width: 860px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}
+@media only screen and (max-width: 880px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}
+@media only screen and (max-width: 920px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}
+@media only screen and (max-width: 900px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}@media only screen and (max-width: 960px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}@media only screen and (max-width: 980px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}@media only screen and (max-width: 1000px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}@media only screen and (max-width: 1020px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}
+@media only screen and (max-width: 820px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}
+@media only screen and (max-width: 840px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}
+@media only screen and (max-width: 860px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}
 
+@media only screen and (max-width: 800px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}
+@media only screen and (max-width: 720px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}
+@media only screen and (max-width: 740px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}
+@media only screen and (max-width: 760px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 780px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 640px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 600px)  {
+  /*mobile nav */
+  
+  textarea{
+    width: auto;
+  }
 }
 
 
