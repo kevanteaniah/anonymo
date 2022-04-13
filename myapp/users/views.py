@@ -6,6 +6,7 @@ from myapp import db
 from myapp.models import User, Nymo
 from myapp.users.forms import RegistrationForm, LoginForm, UpdateUserForm
 
+
 users = Blueprint('users', __name__) # dont forget to register this in __init__.py 
 
 
