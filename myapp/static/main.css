@@ -237,6 +237,41 @@ textarea{
   position: relative;
 }
 
+.update{
+  color: rgb(0, 194, 194);
+  font-size: 16px;
+  width: 50px;
+  
+  
+  
+}
+.update-div{
+  position: absolute;
+  bottom: 0px; 
+  left: 75px;
+}
+
+.update-div:hover{
+  transform: scale(1.1);
+}
+
+.delete{
+  color: red;
+  font-size: 16px;
+  padding: 5px;
+  text-align: center;
+  height: 25px;
+  position: absolute;
+  bottom: 1px; 
+  left: 5px;
+  margin-bottom: 3px;
+  background-color: none;
+  border: none;
+}
+
+.delete:hover{
+  transform: scale(1.1);
+}
 
 
 
