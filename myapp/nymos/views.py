@@ -41,7 +41,7 @@ def update(nymo_id):
         nymo.text = form.text.data
         db.session.commit()
         flash('Nymo Updated')
-        return redirect(url_for('nymos.nymos',nymo_id=nymo.id))
+        return redirect(url_for('nymos.nymo',nymo_id=nymo_id))
 
     elif request.method == 'GET':
         form.title.data = nymo.title
