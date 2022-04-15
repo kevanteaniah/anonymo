@@ -3,7 +3,7 @@
 
 <a href="https://kg-anonymo.herokuapp.com/"><h2>View</h2></a>
 
-<img src="">
+<img src="/myapp/static/images/screenshot.jpg" alt="profile" >
 
 <h2>Origin</h2>
 The world has been locking up heroes for centuries. The heroes I speak of are inside traders. Anonymo is the answer. Anonymo is a platform to share financial tips without the leak being traced. Anonymously post any information that you feel  the world needs to know. <br> 
