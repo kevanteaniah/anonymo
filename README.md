@@ -14,9 +14,9 @@ Image were found on google
 
 <h2>Technologies Used</h2>
 <ul>
-  <li><i class="fa-brands fa-css3"></i></li>
-  <li><i class="fa-brands fa-python"></i></li>
-  <li><i class="fa-brands fa-html5"></i></li>
+  <li></i>CSS</li>
+  <li></i>Python</li>
+  <li>HTML</li>
   <li>Flask</li>
   <li>Andaconda</li>
   <li>PSQL</li>
