@@ -14,6 +14,8 @@ Image were found on google
 
 <h2>Technologies Used</h2>
 <ul>
+
+  <li></i>Hunter</li>
   <li></i>CSS</li>
   <li></i>Python</li>
   <li>HTML</li>
