@@ -10,7 +10,7 @@ The world has been locking up heroes for centuries. The heroes I speak of are in
 <br>
 
 <h2>Credits</h2>
-Image were found on google
+Image was found on flaticon
 
 <h2>Technologies Used</h2>
 <ul>
